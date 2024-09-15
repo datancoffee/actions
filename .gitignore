@@ -1,0 +1,23 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# temp python files
+**/__pycache__/
+
+# local directories
+unused
+out
+
+# IDEA files
+.idea
+
+# local and unfinished code
+examples/*_local.py
+core/**/*_local.py

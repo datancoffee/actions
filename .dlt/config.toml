@@ -1,0 +1,6 @@
+[runtime]
+log_level="WARNING"  # the system log level of dlt
+dlthub_telemetry = false
+
+[destination.read_destination]
+max_size_gb=1
