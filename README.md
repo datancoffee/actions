@@ -52,7 +52,11 @@ export HF_TOKEN=<your-hf-token>
 ### Example: Generate a meaningful technical response to a Github issue comments thread
 This example can be thought of as a bot proposing an answer to the thread of issue comments on GitHub.
 
-**Uses**: HuggingFace model API, local Pytorch, local meta-llama/Meta-Llama-3-8B-Instruct inference, Apple MPS device (can be switched to cpu) 
+**Uses**: HuggingFace model API, local Pytorch, local meta-llama/Meta-Llama-3-8B-Instruct inference, Apple MPS device (can be switched to cpu)
+
+**Input**: A particular GitHub issue (#933 of the dlthub repo) will be downloaded with all its comments
+
+**Output**: Files will be written to the "out" directory, containing the proposed response and the full message chat 
 
 ```
 python3 examples/github_bot.py
@@ -60,10 +64,13 @@ python3 examples/github_bot.py
 
 ### Example: Classify all images in a folder
 The following example runs every image file in data/flowers-102-100 folder
-through Imagenet Labeler. It prints probabilities of image classes in Standard Output
-e.g. 'bee[0.564373791217804], daisy[0.07953538745641708]'
+through Imagenet Labeler. 
 
 **Uses**: local PyTorch, Apple "mps" GPU device (can run with cpu as well).
+
+**Input**: image files in data/flowers-102-100 folder
+
+**Output**: Standard Output will contain probabilities of image classes e.g. 'bee[0.564373791217804], daisy[0.07953538745641708]'
 
 ```
 python3 examples/pytorch_image_labeler.py
