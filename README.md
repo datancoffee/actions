@@ -1,6 +1,6 @@
 ## Data App Actions Framework
 
-Simple framework of typical data app actions (readers, transforms, inference, writers) for Python.
+Simple framework of typical data app actions (data readers, transforms, inference, data writers) for Python.
 
 
 ## Install dependencies
